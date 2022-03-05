@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.display {
+    grid-column: span 4;
+    background-color: rgb(193, 193, 193);
+    font-size: 50px;
+    text-align: end;
+    border-radius: 5px;
+}
+
+.numbersAndOperators {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.button {
+    font-size: 50px;
+    border-radius: 5px;
+}
+
+.negative,
+.factorial,
+.power,
+.sqrt,
+.cbrt,
+.multiply,
+.add,
+.subtract,
+.divide,
+.dec,
+.equal {
+    font-size: 50px;
+    border-radius: 5px;
+}
+
+.delete,
+.clear {
+    font-size: 25px;
+    border-radius: 5px;
+}
