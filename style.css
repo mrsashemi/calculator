@@ -1,7 +1,17 @@
+body {
+    background: linear-gradient(135deg, rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
 .calculator {
@@ -14,12 +24,41 @@
     padding: 0;
 }
 
+.mathGrid {
+    /* background gradients generated using colorzilla.com */
+    background: linear-gradient(to bottom, 
+    rgba(149,149,149,0.9) 0%,
+    rgba(13,13,13,0.9) 46%,
+    rgba(1,1,1,0.9) 50%,
+    rgba(10,10,10,0.9) 53%,
+    rgba(78,78,78,0.9) 76%,
+    rgba(56,56,56,0.9) 87%,
+    rgba(27,27,27,0.9) 100%);
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: inset 0 3px 6px 
+    rgba(0,0,0,0.8), 0 4px 6px 
+    rgba(0,0,0,0.9);
+    color: white;
+}
+
+.calcBackground {
+    background-image: url(images/internetwars.jpg);
+    background-size: contain;
+    border-radius: 25px;
+}
+
 .display {
     grid-column: span 4;
-    background-color: rgb(193, 193, 193);
     font-size: 50px;
     text-align: end;
-    border-radius: 5px;
+    background: linear-gradient(135deg, 
+    rgba(226,226,226,0.5) 0%,
+    rgba(219,219,219,0.5) 50%,
+    rgba(209,209,209,0.5) 51%,
+    rgba(254,254,254,0.5) 100%); 
+    font-family:'Courier New', Courier, monospace;
+    color: black;
 }
 
 .numbersAndOperators {
@@ -30,8 +69,14 @@
 }
 
 .button {
+    background: linear-gradient(135deg, 
+    rgba(255,255,255,1) 0%,
+    rgba(241,241,241,1) 39%,
+    rgba(225,225,225,1) 73%,
+    rgba(246,246,246,1) 100%);
     font-size: 50px;
     border-radius: 5px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .negative,
@@ -45,12 +90,38 @@
 .divide,
 .dec,
 .equal {
+    background: linear-gradient(135deg, 
+    rgba(207,231,250,1) 0%,
+    rgba(99,147,193,1) 100%);
+    color: white;
     font-size: 50px;
     border-radius: 5px;
+    font-family:'Courier New', Courier, monospace;
 }
+
+.power,
+.cbrt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.x,
+.cube {
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
 
 .delete,
 .clear {
+    background: linear-gradient(135deg, 
+    rgba(243,197,189,1) 0%,
+    rgba(232,108,87,1) 26%,
+    rgba(234,40,3,1) 52%,
+    rgba(199,34,0,1) 100%);
+    color: white;
     font-size: 25px;
     border-radius: 5px;
 }

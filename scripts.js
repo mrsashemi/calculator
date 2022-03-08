@@ -52,7 +52,7 @@ let factorial = (a) => {
     for (let i = 1; i <= a; i++) {
         arr.push(i);
     }
-    return arr.reduce((a,b) => {return a*b}, 1);
+    return (a > 0) ? arr.reduce((a,b) => {return a*b}, 1) : "ERROR";
 }
 
 let operate = (operand, a, b) => {
@@ -207,7 +207,7 @@ result();
 
 function clearDisplay() {
     clear.addEventListener('click', () => {
-        display.textContent = '';
+        display.textContent = '0000';
         altDisplay.textContent = '';
     })
 }
